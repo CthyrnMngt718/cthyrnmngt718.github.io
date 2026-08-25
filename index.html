@@ -23,7 +23,7 @@
 
     <meta property="og:title" content="Cathyrine Menguito | Web Developer & UI/UX Designer" />
     <meta property="og:description" content="Computer Science graduate building practical web systems for healthcare, education, and real estate." />
-    <meta property="og:image" content="https://cthyrnmngt718.github.io/og-image.jpg" />
+    <meta property="og:image" content="https://cthyrnmngt718.github.io/assets/images/1000014492.jpg" />
     <meta property="og:url" content="https://cthyrnmngt718.github.io/" />
     <meta name="twitter:card" content="summary_large_image" />
 
@@ -34,7 +34,7 @@
         "@type": "Person",
         "name": "Cathyrine Menguito",
         "url": "https://cthyrnmngt718.github.io/",
-        "image": "https://cthyrnmngt718.github.io/1000014492.jpg",
+        "image": "https://cthyrnmngt718.github.io/assets/images/1000014492.jpg",
         "jobTitle": "Web Developer & UI/UX Designer",
         "description": "Computer Science graduate building practical web systems for healthcare, education, and real estate.",
         "email": "cthyrnmngt718@gmail.com",
@@ -70,16 +70,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <!-- ===== FAVICONS (Updated Paths) ===== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
-    <!-- ===== CUSTOM STYLES ===== -->
+    <!-- ===== CUSTOM CSS (Updated Path) ===== -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- ===== INLINE STYLES (Keep for critical styles) ===== -->
     <style>
         /* --- Project Thumbnails (Browser Mockup) --- */
         .project-thumbnail {
@@ -167,7 +170,6 @@
         }
 
         /* --- Theme Classes for Thumbnails --- */
-        /* Dark Mode (Default) */
         .thumbnail-theme-rhu {
             background: linear-gradient(135deg, #0b2a1a, #006644);
         }
@@ -181,7 +183,6 @@
             background: linear-gradient(135deg, #1a1a1a, #7a6548);
         }
 
-        /* Dark Mode: Text Colors (white) */
         .thumbnail-theme-rhu .thumbnail-monogram,
         .thumbnail-theme-angono .thumbnail-monogram,
         .thumbnail-theme-howcan .thumbnail-monogram,
@@ -246,7 +247,6 @@
             background: rgba(0,0,0,0.2);
         }
 
-        /* Tech bar inside thumbnail */
         .thumbnail-tech-bar {
             display: flex;
             gap: 6px;
@@ -275,7 +275,6 @@
             color: #0b1a14;
         }
 
-        /* --- Impact Badges --- */
         .project-impact {
             display: flex;
             gap: 10px;
@@ -299,7 +298,6 @@
             opacity: 0.8;
         }
 
-        /* --- Status & Role Tags --- */
         .project-meta-tags {
             display: flex;
             gap: 8px;
@@ -344,7 +342,6 @@
             font-size: 0.6rem;
         }
 
-        /* --- Project Description --- */
         .proj-desc {
             max-height: 4.5em;
             overflow: hidden;
@@ -410,7 +407,6 @@
             transform: translateX(4px);
         }
 
-        /* --- Project Actions --- */
         .project-actions {
             display: flex;
             gap: 10px;
@@ -456,7 +452,6 @@
             color: var(--mint-primary);
         }
 
-        /* --- Filter Animations --- */
         .project-grid .project-card {
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             opacity: 1;
@@ -488,7 +483,6 @@
             to { opacity: 1; transform: translateY(0) scale(1); }
         }
 
-        /* --- Card Hover Effects --- */
         .project-card {
             transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
             position: relative;
@@ -515,7 +509,6 @@
             box-shadow: 0 20px 60px rgba(0, 200, 120, 0.15);
         }
 
-        /* --- Filter Button Animation --- */
         .filter-btn {
             transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
             position: relative;
@@ -527,7 +520,6 @@
             transform: translateY(-2px) scale(1.02);
         }
 
-        /* --- Tech Stack: Skill Distribution Bars --- */
         .skill-distribution-container {
             background: var(--bg-card);
             border: 1px solid var(--border-mint);
@@ -548,7 +540,6 @@
             background: rgba(255, 255, 255, 0.7);
         }
 
-        /* --- Tech Stack Grid --- */
         .tech-stack-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -606,7 +597,6 @@
             background: rgba(255, 255, 255, 0.6);
         }
 
-        /* --- Location Badge --- */
         .location-badge {
             display: inline-flex;
             align-items: center;
@@ -626,7 +616,6 @@
             font-size: 0.8rem;
         }
 
-        /* --- Resume Download Hero --- */
         .resume-download-hero {
             display: inline-flex;
             align-items: center;
@@ -653,7 +642,6 @@
             font-size: 1.1rem;
         }
 
-        /* --- Light Mode Adjustments --- */
         [data-theme="light"] .proj-desc::after {
             background: linear-gradient(transparent, rgba(255,255,255,0.7));
         }
@@ -706,7 +694,7 @@
         [data-theme="light"] .card-particle-1,
         [data-theme="light"] .card-particle-2,
         [data-theme="light"] .card-particle-3 {
-            opacity: 0.08;
+            opacity: 0.10;
         }
         [data-theme="light"] .card-particle-1 {
             background: #00bb77;
@@ -717,13 +705,7 @@
         [data-theme="light"] .card-particle-3 {
             background: #00bb77;
         }
-        [data-theme="light"] .card-particle-1,
-        [data-theme="light"] .card-particle-2,
-        [data-theme="light"] .card-particle-3 {
-            opacity: 0.10;
-        }
 
-        /* Apply particles to cards */
         .project-card,
         .service-card,
         .edu-card,
@@ -801,9 +783,6 @@
             opacity: 0.08;
         }
     </style>
-
-    <!-- Custom CSS (external) -->
-    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <!-- ========== SKIP TO CONTENT ========== -->
@@ -903,7 +882,8 @@
                     </a>
                 </div>
 
-                <a href="Cathyrine%20Menguito%20Resume.pdf" download class="resume-download-hero" aria-label="Download my resume">
+                <!-- ===== RESUME DOWNLOAD (Updated Path) ===== -->
+                <a href="assets/images/Cathyrine%20Menguito%20Resume.pdf" download class="resume-download-hero" aria-label="Download my resume">
                     <i class="fas fa-file-pdf"></i>
                     <span data-i18n="resume_download_hero">Download Resume (PDF)</span>
                 </a>
@@ -932,7 +912,8 @@
             </div>
             <div class="hero-image">
                 <div class="hero-image-wrapper" data-tilt>
-                    <img src="1000014492.jpg" alt="Cathyrine Menguito - Web Developer and UI/UX Designer" loading="lazy" />
+                    <!-- ===== HERO IMAGE (Updated Path) ===== -->
+                    <img src="assets/images/1000014492.jpg" alt="Cathyrine Menguito - Web Developer and UI/UX Designer" loading="lazy" />
                     <div class="hero-image-ring"></div>
                 </div>
             </div>
@@ -1083,7 +1064,8 @@
                             <button class="btn btn-primary" id="resume-preview-btn" aria-label="Preview resume">
                                 <i class="fas fa-file-pdf"></i> <span data-i18n="about_btn_preview">Preview Resume</span>
                             </button>
-                            <a href="Cathyrine%20Menguito%20Resume.pdf" download class="btn btn-secondary" aria-label="Download resume PDF">
+                            <!-- ===== ABOUT DOWNLOAD (Updated Path) ===== -->
+                            <a href="assets/images/Cathyrine%20Menguito%20Resume.pdf" download class="btn btn-secondary" aria-label="Download resume PDF">
                                 <i class="fas fa-download"></i> <span data-i18n="about_btn_download">Download PDF</span>
                             </a>
                         </div>
@@ -1291,6 +1273,7 @@
                     <h2><span data-i18n="edu_title_prefix">My</span> <span class="gradient-text" data-i18n="edu_title_gradient">Academic Journey</span></h2>
                 </div>
                 <div class="education-grid">
+                    <!-- Education cards (unchanged) -->
                     <div class="edu-card" data-tilt>
                         <div class="card-particle card-particle-1"></div>
                         <div class="card-particle card-particle-2"></div>
@@ -1394,7 +1377,6 @@
                 </div>
                 <p class="team-sub" data-i18n="team_sub">I believe good work comes from collaboration. Here are some of the people I've had the privilege of working with and learning from.</p>
 
-                <!-- Projects We Built Together -->
                 <div class="team-collaboration-highlight">
                     <span class="highlight-label"><i class="fas fa-code-branch"></i> <span data-i18n="team_built_together">Built Together</span></span>
                     <div class="highlight-projects">
@@ -1514,7 +1496,6 @@
                     </div>
                 </div>
 
-                <!-- Connection Arc -->
                 <div class="team-connection-arc">
                     <svg viewBox="0 0 200 60" preserveAspectRatio="none">
                         <path d="M 0 40 Q 100 0 200 40" stroke="var(--mint-primary)" stroke-width="1.5" fill="none" opacity="0.15" stroke-dasharray="4 6"/>
@@ -1543,7 +1524,6 @@
                         </h3>
                         <p data-i18n="client_desc">I work with a development team to build practical web-based systems and applications for businesses, organizations, and project teams. We focus on functional solutions, user-friendly interfaces, and systems designed around specific requirements.</p>
 
-                        <!-- Trust Indicators (Real Data) -->
                         <div class="client-trust">
                             <div class="trust-item">
                                 <span class="trust-number">3</span>
@@ -1561,7 +1541,6 @@
                             </div>
                         </div>
 
-                        <!-- Process Steps -->
                         <div class="client-process">
                             <div class="process-step">
                                 <div class="process-icon"><i class="fas fa-comments"></i></div>
@@ -1606,7 +1585,6 @@
                         </a>
                     </div>
 
-                    <!-- Decorative Elements -->
                     <div class="client-decoration">
                         <div class="deco-shape deco-shape-1"></div>
                         <div class="deco-shape deco-shape-2"></div>
@@ -1809,7 +1787,7 @@
                         </div>
                     </div>
 
-                    <!-- ========== PROJECT 4: RITREMIS (Fixed: was "Ritremes") ========== -->
+                    <!-- ========== PROJECT 4: RITREMIS ========== -->
                     <div class="project-card" data-category="realestate php bootstrap" data-tilt>
                         <div class="card-particle card-particle-1"></div>
                         <div class="card-particle card-particle-2"></div>
@@ -1868,7 +1846,6 @@
 
                 </div><!-- end project-grid -->
 
-                <!-- CTA -->
                 <div class="center-btn" style="margin-top:40px;">
                     <a href="#contact" class="btn btn-primary" aria-label="Let's work together" style="font-size:1rem; padding:14px 36px;">
                         <i class="fas fa-handshake"></i> <span data-i18n="projects_cta">Let's Work Together</span>
@@ -1947,7 +1924,10 @@
                     </section>
                 </div>
                 <div class="resume-modal-footer">
-                    <a href="Cathyrine%20Menguito%20Resume.pdf" download class="btn btn-primary" style="color:#0b0e0c;"><i class="fas fa-download"></i> <span data-i18n="resume_download_btn">Download PDF</span></a>
+                    <!-- ===== RESUME MODAL DOWNLOAD (Updated Path) ===== -->
+                    <a href="assets/images/Cathyrine%20Menguito%20Resume.pdf" download class="btn btn-primary" style="color:#0b0e0c;">
+                        <i class="fas fa-download"></i> <span data-i18n="resume_download_btn">Download PDF</span>
+                    </a>
                     <button class="btn btn-secondary" id="resume-modal-close-btn"><i class="fas fa-times"></i> <span data-i18n="resume_close_btn">Close</span></button>
                 </div>
             </div>
@@ -1959,7 +1939,8 @@
         <div class="container">
             <div class="signature-section">
                 <div class="signature-wrapper">
-                    <img src="Signature.png" alt="Cathyrine Menguito Signature" class="signature-img" loading="lazy" />
+                    <!-- ===== SIGNATURE IMAGE (Updated Path) ===== -->
+                    <img src="assets/images/Signature.png" alt="Cathyrine Menguito Signature" class="signature-img" loading="lazy" />
                     <span class="signature-line"></span>
                 </div>
                 <p class="signature-title" data-i18n="footer_name">Cathyrine Menguito</p>
@@ -2003,10 +1984,10 @@
         </button>
     </div>
 
-    <!-- ========== SCRIPTS ========== -->
-    <script src="script.js"></script>
+    <!-- ===== SCRIPTS (Updated Path) ===== -->
+    <script src="assets/js/script.js"></script>
 
-    <!-- ===== READ MORE TOGGLE SCRIPT (Each card independent) ===== -->
+    <!-- ===== READ MORE TOGGLE SCRIPT ===== -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const readMoreBtns = document.querySelectorAll('.read-more-btn');
