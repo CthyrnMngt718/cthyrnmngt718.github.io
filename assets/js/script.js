@@ -1268,7 +1268,7 @@ function loadPDFViewer() {
 
 function renderPDFWithPDFJS() {
     const viewer = pdfViewer;
-    const pdfUrl = 'Cathyrine%20Menguito%20Resume.pdf';
+    const pdfUrl = 'assets/images/Cathyrine%20Menguito%20Resume.pdf';  // ← Updated path
     
     viewer.innerHTML = `
         <div style="display:flex;align-items:center;justify-content:center;height:500px;flex-direction:column;gap:16px;color:var(--text-secondary);">
@@ -1323,7 +1323,7 @@ function renderPDFWithPDFJS() {
 
 function renderPDFWithIframe() {
     const viewer = pdfViewer;
-    const pdfUrl = 'Cathyrine%20Menguito%20Resume.pdf';
+    const pdfUrl = 'assets/images/Cathyrine%20Menguito%20Resume.pdf';  // ← Updated path
     
     viewer.innerHTML = `
         <iframe src="${pdfUrl}#toolbar=0&navpanes=0&scrollbar=0" 
