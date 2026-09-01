@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://cthyrnmngt718.github.io/sitemap.xml
