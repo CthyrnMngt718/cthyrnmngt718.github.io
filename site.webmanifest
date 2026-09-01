@@ -1,0 +1,14 @@
+{
+  "name":"Cathyrine Menguito — Professional Portfolio",
+  "short_name":"CM Portfolio",
+  "description":"Web-based development, system development, UI/UX, and technical project portfolio of Cathyrine Menguito.",
+  "start_url":"/",
+  "scope":"/",
+  "display":"standalone",
+  "background_color":"#07110d",
+  "theme_color":"#07110d",
+  "icons":[
+    {"src":"web-app-manifest-192x192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"web-app-manifest-512x512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
