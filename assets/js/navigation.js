@@ -96,17 +96,32 @@ export function initNavigation() {
   const meta = document.querySelector('#themeColorMeta');
   const saved = localStorage.getItem('cm-theme-v5');
   const preferred = saved || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
-  const applyTheme = theme => {
+  const applyTheme = (theme, persist = true) => {
     document.documentElement.dataset.theme = theme;
     if (themeToggle) {
       themeToggle.innerHTML = theme === 'light' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
       themeToggle.setAttribute('aria-label', theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
+      themeToggle.setAttribute('title', theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
     }
-    if (meta) meta.content = theme === 'light' ? '#f4f0e8' : '#07110d';
-    localStorage.setItem('cm-theme-v5', theme);
+    if (meta) meta.content = theme === 'light' ? '#f5f2eb' : '#07110d';
+    if (persist) localStorage.setItem('cm-theme-v5', theme);
+    window.dispatchEvent(new CustomEvent('cm-theme-change', { detail: { theme } }));
   };
-  applyTheme(preferred);
-  themeToggle?.addEventListener('click', () => applyTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light'));
+  applyTheme(preferred, Boolean(saved));
+  themeToggle?.addEventListener('click', () => {
+    const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+    const change = () => {
+      document.documentElement.classList.add('theme-changing');
+      applyTheme(next, true);
+      setTimeout(() => document.documentElement.classList.remove('theme-changing'), 360);
+    };
+    if (document.startViewTransition && !matchMedia('(prefers-reduced-motion: reduce)').matches) document.startViewTransition(change);
+    else change();
+  });
+  const scheme = matchMedia('(prefers-color-scheme: light)');
+  scheme.addEventListener?.('change', event => {
+    if (!localStorage.getItem('cm-theme-v5')) applyTheme(event.matches ? 'light' : 'dark', false);
+  });
 
   const onResize = () => setIndicator(document.querySelector('.desktop-nav a.active'));
   addEventListener('resize', onResize, { passive:true });
