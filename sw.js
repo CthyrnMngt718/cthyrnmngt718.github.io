@@ -1,4 +1,4 @@
-const VERSION = 'cathyrine-portfolio-v5-6-mbmis';
+const VERSION = 'cathyrine-portfolio-v5-7-theme-motion';
 const CACHE_PREFIX = 'cathyrine-portfolio-';
 const SHELL = `${VERSION}-shell`;
 const RUNTIME = `${VERSION}-runtime`;
@@ -6,11 +6,12 @@ const RUNTIME = `${VERSION}-runtime`;
 const SHELL_ASSETS = [
   '/', '/index.html', '/offline.html', '/resume.html', '/site.webmanifest',
   '/favicon.ico', '/favicon-96x96.png', '/apple-touch-icon.png',
-  '/assets/css/tokens.css', '/assets/css/base.css', '/assets/css/components.css', '/assets/css/sections.css', '/assets/css/responsive.css',
-  '/assets/js/app.js', '/assets/js/navigation.js', '/assets/js/motion.js', '/assets/js/roleLens.js', '/assets/js/capabilities.js', '/assets/js/projects.js', '/assets/js/lab.js', '/assets/js/recruiter.js', '/assets/js/contact.js', '/assets/js/pwa.js',
+  '/assets/css/tokens.css', '/assets/css/base.css', '/assets/css/components.css', '/assets/css/sections.css', '/assets/css/responsive.css', '/assets/css/standalone.css',
+  '/assets/js/app.js', '/assets/js/navigation.js', '/assets/js/motion.js', '/assets/js/roleLens.js', '/assets/js/capabilities.js', '/assets/js/projects.js', '/assets/js/lab.js', '/assets/js/recruiter.js', '/assets/js/contact.js', '/assets/js/pwa.js', '/assets/js/site-theme.js',
   '/assets/data/profile.js', '/assets/data/projects.js',
   '/assets/images/cm-mark-192.webp', '/assets/images/cm-mark.webp', '/assets/images/profile-portrait.webp',
-  '/assets/images/rhu-morong-featured.webp', '/assets/images/mbmis-login.webp', '/assets/images/signature.png'
+  '/assets/images/rhu-morong-featured.webp', '/assets/images/mbmis-login.webp', '/assets/images/signature.png',
+  '/work/rhu-morong/', '/work/angono-career-assessment/', '/work/mbmis/', '/work/ritremis/'
 ];
 
 const isPersonalPortfolioPath = (pathname) => {
