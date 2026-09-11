@@ -115,3 +115,25 @@
   .about-image{width:min(100%,280px)}
   .about-image>img:first-child{max-height:72svh}
 }
+
+
+/* V5.7 — responsive interaction safety */
+@media (max-width:760px){
+  .timeline::before{display:none}
+  .story-steps article:not(.is-active-step){opacity:.8}
+  .story-steps article.is-active-step,.timeline article.is-active-step{transform:none}
+  .section-block::before{width:90vw;height:90vw;top:16%}
+}
+@media (hover:none),(pointer:coarse){
+  .project-card,.process-grid article,.role-board article,.collab-grid article{--tilt-x:0deg!important;--tilt-y:0deg!important}
+}
+@media (prefers-reduced-motion:reduce){
+  .section-block::before{display:none}
+  .story-steps article:not(.is-active-step){opacity:1}
+  .story-steps article.is-active-step,.timeline article.is-active-step{transform:none}
+}
+
+@media (prefers-contrast:more){
+  :root{--line:rgba(139,242,195,.42);--line-strong:rgba(139,242,195,.7);--muted:#d0ded5;--faint:#b9c9bf}
+  html[data-theme='light']{--line:rgba(8,88,61,.38);--line-strong:rgba(8,88,61,.66);--muted:#2d4638;--faint:#425d4e}
+}
