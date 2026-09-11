@@ -49,30 +49,31 @@ export const PROJECTS = [
     live: 'https://angononhs-onlinecareerassessment.online/',
     fullCase: 'https://cthyrnmngt718.github.io/work/angono-career-assessment/'
   },
+
   {
-    slug: 'howcan-i-help',
-    short: 'HCIH',
-    title: 'HowCan-i-Help',
-    category: 'Healthcare · Professional · Real IT OPC',
+    slug: 'mbmis',
+    short: 'MBMIS',
+    title: 'Menguito Businesses MIS',
+    category: 'Business Operations · Full Stack · Live',
     year: '2026',
-    roles: ['webdev','uiux','coordination'],
-    summary: 'A healthcare and assistance platform developed professionally at Real IT OPC to support clinic workflows and connected user needs.',
-    problem: 'The platform needed to translate real operational requirements into usable interfaces that fit an active clinic workflow.',
-    users: 'Clinic staff and users interacting with healthcare and assistance workflows.',
-    responsibility: 'Web-interface implementation, UI/UX work, project coordination, and collaboration with senior developers through system implementation and refinement.',
+    roles: ['webdev','systems','uiux','coordination'],
+    summary: 'A full-stack management information system for Menguito Businesses that brings operational records, services, assets, collections, financial information, and role-based workspaces into one secure web platform.',
+    problem: 'Business information and day-to-day operational tasks needed a more organized way to live in one system while still giving each user access to the tools and responsibilities assigned to their role.',
+    users: 'Authorized staff and administrators working across Menguito Businesses operations and management workflows.',
+    responsibility: 'Full-stack development across the responsive interface, PHP application workflows, MySQL-backed data handling, role-aware access, validation, system modules, deployment, and iterative maintenance.',
     decisions: [
-      'Keep routine actions visible and predictable for repeat users.',
-      'Use consistent component behavior across forms and workflow screens.',
-      'Refine responsive behavior around real operational content rather than generic demo data.',
-      'Treat feedback from project stakeholders as an input to interface iteration.'
+      'Organize business modules around the tasks users actually perform instead of exposing every function at once.',
+      'Use role-aware access so the workspace can adapt to assigned responsibilities.',
+      'Keep authentication, status, and account-security feedback clear without making the interface feel heavy.',
+      'Build reusable layout and component patterns so new modules can remain visually and behaviorally consistent.'
     ],
-    challenges: 'Working inside an existing professional development process while adapting to changing requirements and implementation dependencies.',
-    solution: 'Coordinated closely with the development team, implemented web-interface changes iteratively, and adjusted system behavior based on project feedback.',
-    outcome: 'The platform is actively used in clinic workflows.',
-    learning: 'Professional delivery reinforced the importance of versioning interface decisions, documenting assumptions, and communicating dependencies early.',
-    stack: ['PHP','MySQL','JavaScript','Bootstrap'],
-    live: 'https://howcan-i-help.org/',
-    fullCase: 'https://cthyrnmngt718.github.io/work/howcan-i-help/'
+    challenges: 'Bringing multiple business functions into one management system while keeping permissions, navigation, data workflows, and interface behavior understandable as the platform grows.',
+    solution: 'Structured the system around reusable modules and role-based workflows, connected front-end states to database-backed operations, and refined the interface and application behavior through repeated testing and deployment updates.',
+    outcome: 'Deployed online as the active Menguito Businesses Management Information System at menguitobmis.online.',
+    learning: 'The project strengthened my full-stack workflow: planning the interface and data flow together, keeping role-based behavior consistent, and treating deployment, security checks, and maintenance as part of development rather than as separate afterthoughts.',
+    stack: ['HTML','CSS','JavaScript','PHP','MySQL','Bootstrap'],
+    live: 'https://menguitobmis.online/',
+    fullCase: 'https://cthyrnmngt718.github.io/work/mbmis/'
   },
   {
     slug: 'ritremis',

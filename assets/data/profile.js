@@ -59,7 +59,7 @@ export const CAPABILITIES = [
     area: 'Web-Based Development',
     level: 'Core practice',
     roles: ['all','webdev','systems','uiux'],
-    evidence: ['RHU Morong Health System', 'Angono NHS independent web application', 'HowCan-i-Help professional project', 'RITREMIS active development'],
+    evidence: ['RHU Morong Health System', 'Angono NHS independent web application', 'Menguito Businesses MIS full-stack project', 'RITREMIS active development'],
     skills: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'Responsive layouts', 'Web application workflows']
   },
   {
@@ -67,7 +67,7 @@ export const CAPABILITIES = [
     area: 'PHP / MySQL System Development',
     level: 'Project experience',
     roles: ['all','systems','webdev'],
-    evidence: ['Angono NHS independent project', 'RHU Morong system integration', 'HowCan-i-Help professional exposure', 'RITREMIS active development'],
+    evidence: ['Angono NHS independent project', 'RHU Morong system integration', 'Menguito Businesses MIS full-stack development', 'RITREMIS active development'],
     skills: ['PHP', 'MySQL', 'CRUD workflows', 'Form handling', 'Records', 'Database-backed pages']
   },
   {
@@ -75,7 +75,7 @@ export const CAPABILITIES = [
     area: 'Interface & UX Design',
     level: 'Complementary strength',
     roles: ['all','uiux','webdev'],
-    evidence: ['RHU Morong interface direction', 'HowCan-i-Help interface implementation', 'RITREMIS responsive interface work', 'Personal portfolio design system'],
+    evidence: ['RHU Morong interface direction', 'Menguito Businesses MIS interface and module development', 'RITREMIS responsive interface work', 'Personal portfolio design system'],
     skills: ['Information hierarchy', 'Layout planning', 'Responsive states', 'Form UX', 'Dashboard UI', 'Interaction refinement']
   },
   {
