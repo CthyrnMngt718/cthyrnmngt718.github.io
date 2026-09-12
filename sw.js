@@ -1,4 +1,4 @@
-const VERSION = 'cathyrine-portfolio-v5-7-theme-motion';
+const VERSION = 'cathyrine-portfolio-v5-7-theme-motion-cm-logo-refresh';
 const CACHE_PREFIX = 'cathyrine-portfolio-';
 const SHELL = `${VERSION}-shell`;
 const RUNTIME = `${VERSION}-runtime`;
