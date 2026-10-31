@@ -1,0 +1,74 @@
+{
+  "rhu-morong": {
+    "short": "RHU Morong Health System",
+    "category": "Healthcare \u00b7 Academic team project",
+    "role": "Responsive interface architecture, UI/UX decisions, workflow design, and collaboration on backend integration.",
+    "stack": [
+      "PHP",
+      "MySQL",
+      "Responsive UI",
+      "UI/UX"
+    ],
+    "number": "01",
+    "title": "RHU Morong Health System",
+    "description": "A healthcare management system for the Rural Health Unit of Morong, Rizal, built to improve patient intake, appointment scheduling, and record-management workflows.",
+    "url": "/work/rhu-morong/"
+  },
+  "mbmis": {
+    "short": "Menguito Businesses MIS",
+    "category": "Business operations \u00b7 Full-stack",
+    "role": "Full-stack application development covering interfaces, PHP/MySQL operations, role-aware access, system modules, testing, and deployment.",
+    "stack": [
+      "Full-stack",
+      "PHP",
+      "MySQL",
+      "Bootstrap"
+    ],
+    "number": "02",
+    "title": "Menguito Businesses MIS",
+    "description": "A full-stack management information system built to bring Menguito Businesses operations, records, services, assets, collections, financial information, and role-based workspaces into one secure web platform.",
+    "url": "/work/mbmis/"
+  },
+  "angono-career-assessment": {
+    "short": "Angono NHS Career Assessment",
+    "category": "Education \u00b7 Independent academic project",
+    "role": "Independent database, front-end, system features, and deployment work across the project lifecycle.",
+    "stack": [
+      "Full-stack",
+      "Education",
+      "Assessment UX"
+    ],
+    "number": "03",
+    "title": "Angono NHS Career Assessment",
+    "description": "A web-based career guidance tool for incoming Senior High School students to explore suitable SHS strands using interests, skills, and academic inclinations.",
+    "url": "/work/angono-career-assessment/"
+  },
+  "ritremis": {
+    "short": "RITREMIS",
+    "category": "Real estate \u00b7 Professional collaboration",
+    "role": "Front-end implementation, UI/UX and responsive interface design in collaboration with the development team.",
+    "stack": [
+      "UI/UX",
+      "Responsive UI",
+      "Collaboration"
+    ],
+    "number": "04",
+    "title": "RITREMIS",
+    "description": "A real-estate management information platform designed to centralize property information and improve how stakeholders work with property-related data.",
+    "url": "/work/ritremis/"
+  },
+  "howcan-i-help": {
+    "short": "HowCan-i-Help (HCIH)",
+    "category": "Healthcare \u00b7 Professional collaboration",
+    "role": "Interface implementation, user-experience improvements, front-end work, and project coordination.",
+    "stack": [
+      "UI/UX",
+      "Front-end",
+      "Collaboration"
+    ],
+    "number": "05",
+    "title": "HowCan-i-Help",
+    "description": "A healthcare and assistance platform developed professionally at Real IT OPC to support clinic workflows and connected user needs.",
+    "url": "/work/howcan-i-help/"
+  }
+}
