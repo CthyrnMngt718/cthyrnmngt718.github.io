@@ -1,7 +1,7 @@
 {
   "rhu-morong": {
     "short": "RHU Morong Health System",
-    "category": "Healthcare \u00b7 Academic team project",
+    "category": "Healthcare · Academic team project",
     "role": "Responsive interface architecture, UI/UX decisions, workflow design, and collaboration on backend integration.",
     "stack": [
       "PHP",
@@ -12,11 +12,26 @@
     "number": "01",
     "title": "RHU Morong Health System",
     "description": "A healthcare management system for the Rural Health Unit of Morong, Rizal, built to improve patient intake, appointment scheduling, and record-management workflows.",
-    "url": "/work/rhu-morong/"
+    "url": "/work/rhu-morong/",
+    "image": "/assets/images/projects/rhu-morong/showcase.webp",
+    "gallery": [
+      {
+        "path": "/assets/images/projects/rhu-morong/screen-01.webp",
+        "caption": "Public-facing sign-in interface"
+      },
+      {
+        "path": "/assets/images/projects/rhu-morong/screen-02.webp",
+        "caption": "Administrative dashboard overview"
+      },
+      {
+        "path": "/assets/images/projects/rhu-morong/screen-03.webp",
+        "caption": "Health center management view"
+      }
+    ]
   },
   "mbmis": {
     "short": "Menguito Businesses MIS",
-    "category": "Business operations \u00b7 Full-stack",
+    "category": "Business operations · Full-stack",
     "role": "Full-stack application development covering interfaces, PHP/MySQL operations, role-aware access, system modules, testing, and deployment.",
     "stack": [
       "Full-stack",
@@ -27,11 +42,26 @@
     "number": "02",
     "title": "Menguito Businesses MIS",
     "description": "A full-stack management information system built to bring Menguito Businesses operations, records, services, assets, collections, financial information, and role-based workspaces into one secure web platform.",
-    "url": "/work/mbmis/"
+    "url": "/work/mbmis/",
+    "image": "/assets/images/projects/mbmis/showcase.webp",
+    "gallery": [
+      {
+        "path": "/assets/images/projects/mbmis/screen-01.webp",
+        "caption": "Menguito Businesses access screen"
+      },
+      {
+        "path": "/assets/images/projects/mbmis/screen-02.webp",
+        "caption": "Business dashboard and navigation"
+      },
+      {
+        "path": "/assets/images/projects/mbmis/screen-03.webp",
+        "caption": "System status module"
+      }
+    ]
   },
   "angono-career-assessment": {
     "short": "Angono NHS Career Assessment",
-    "category": "Education \u00b7 Independent academic project",
+    "category": "Education · Independent academic project",
     "role": "Independent database, front-end, system features, and deployment work across the project lifecycle.",
     "stack": [
       "Full-stack",
@@ -41,11 +71,26 @@
     "number": "03",
     "title": "Angono NHS Career Assessment",
     "description": "A web-based career guidance tool for incoming Senior High School students to explore suitable SHS strands using interests, skills, and academic inclinations.",
-    "url": "/work/angono-career-assessment/"
+    "url": "/work/angono-career-assessment/",
+    "image": "/assets/images/projects/angono-career-assessment/showcase.webp",
+    "gallery": [
+      {
+        "path": "/assets/images/projects/angono-career-assessment/screen-01.webp",
+        "caption": "Career assessment welcome screen"
+      },
+      {
+        "path": "/assets/images/projects/angono-career-assessment/screen-02.webp",
+        "caption": "Student sign-in screen"
+      },
+      {
+        "path": "/assets/images/projects/angono-career-assessment/screen-03.webp",
+        "caption": "Administrator sign-in screen"
+      }
+    ]
   },
   "ritremis": {
     "short": "RITREMIS",
-    "category": "Real estate \u00b7 Professional collaboration",
+    "category": "Real estate · Professional collaboration",
     "role": "Front-end implementation, UI/UX and responsive interface design in collaboration with the development team.",
     "stack": [
       "UI/UX",
@@ -55,11 +100,22 @@
     "number": "04",
     "title": "RITREMIS",
     "description": "A real-estate management information platform designed to centralize property information and improve how stakeholders work with property-related data.",
-    "url": "/work/ritremis/"
+    "url": "/work/ritremis/",
+    "image": "/assets/images/projects/ritremis/showcase.webp",
+    "gallery": [
+      {
+        "path": "/assets/images/projects/ritremis/screen-01.webp",
+        "caption": "Administrative dashboard interface"
+      },
+      {
+        "path": "/assets/images/projects/ritremis/screen-02.webp",
+        "caption": "Package and add-on management interface"
+      }
+    ]
   },
   "howcan-i-help": {
     "short": "HowCan-i-Help (HCIH)",
-    "category": "Healthcare \u00b7 Professional collaboration",
+    "category": "Healthcare · Professional collaboration",
     "role": "Interface implementation, user-experience improvements, front-end work, and project coordination.",
     "stack": [
       "UI/UX",
@@ -69,6 +125,13 @@
     "number": "05",
     "title": "HowCan-i-Help",
     "description": "A healthcare and assistance platform developed professionally at Real IT OPC to support clinic workflows and connected user needs.",
-    "url": "/work/howcan-i-help/"
+    "url": "/work/howcan-i-help/",
+    "image": "/assets/images/projects/howcan-i-help/showcase.webp",
+    "gallery": [
+      {
+        "path": "/assets/images/projects/howcan-i-help/screen-01.webp",
+        "caption": "Public-facing clinic support homepage"
+      }
+    ]
   }
 }
