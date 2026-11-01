@@ -1,0 +1,153 @@
+/* Final presentation layer — authentic signature, refined identity and restrained motion.
+   Builds on the existing portfolio; all meaningful content is visible without JavaScript. */
+:root {--cm-motion:cubic-bezier(.2,.78,.22,1)}
+html {scroll-padding-top:120px}
+body {text-rendering:optimizeLegibility}
+/* Header: one precisely centered identity, independent of left/right content widths. */
+.site-header[data-portfolio-header] {isolation:isolate;border-bottom:1px solid var(--line-strong);background:color-mix(in srgb,var(--bg) 94%,transparent);box-shadow:0 10px 30px rgba(0,6,25,.08)}
+.site-header[data-portfolio-header]::before {content:"";position:absolute;bottom:2px;inset-inline:0;height:1px;pointer-events:none;background:linear-gradient(90deg,transparent 8%,rgba(19,182,239,.10) 22%,rgba(28,228,239,.5) 50%,rgba(19,182,239,.10) 78%,transparent 92%)}
+.site-header .header-inner {position:relative;max-width:1180px;grid-template-columns:minmax(0,1fr) 82px minmax(0,1fr);grid-template-rows:65px 35px;height:103px;align-items:center;gap:0 14px}
+.site-header .header-inner>.brand-wordmark {grid-column:1;grid-row:1;justify-self:start;margin:0;min-width:0;max-width:235px}
+.site-header .brand-wordmark .brand-copy {font-family:Manrope,sans-serif;font-size:14px;font-weight:800;letter-spacing:-.035em;line-height:1.25}
+.site-header .brand-wordmark .brand-copy small {color:var(--muted);font-size:9px;letter-spacing:.135em;margin-top:5px}
+.site-header .header-inner>.nav-actions {grid-column:3;grid-row:1;justify-self:end;gap:9px}
+.site-header .header-inner>nav {grid-column:1/-1;grid-row:2;justify-self:center;align-self:center;position:relative}
+.site-header .nav-center-logo,.site-header.is-condensed .nav-center-logo {top:7px;left:50%;width:53px;height:53px;z-index:8;transform:translateX(-50%);border-radius:17px;border-color:rgba(70,227,248,.65);background:linear-gradient(140deg,#031331,#0c3263);box-shadow:0 0 0 4px rgba(28,187,232,.07),0 7px 25px rgba(0,12,37,.25)}
+.site-header .nav-center-logo::before {inset:-6px;border-radius:22px;border-color:rgba(21,199,239,.20)}
+.site-header .nav-center-logo::after {content:"";position:absolute;inset:3px;border:1px solid rgba(91,226,248,.24);border-radius:13px;pointer-events:none}
+.site-header .nav-center-logo img {width:47px;height:47px;border-radius:13px}
+.site-header .nav-center-logo:hover,.site-header .nav-center-logo:focus-visible {transform:translateX(-50%) translateY(-2px) scale(1.025)}
+.site-header .nav-links {gap:clamp(13px,2vw,27px);padding-bottom:1px}
+.site-header .nav-links a {display:inline-block;border-radius:7px;padding:6px 4px;font-size:12px;color:var(--sub);transition:color .2s,background-color .2s}
+.site-header .nav-links a.active {color:var(--cyan);background:var(--cyan-faint)}
+.site-header .nav-links a:hover {color:var(--cyan)}
+.site-header .nav-links a::after {bottom:0;left:4px;right:calc(100% - 4px)}
+.site-header .nav-links a.active::after,.site-header .nav-links a:hover::after {right:4px}
+.site-header .theme-btn,.site-header .command-btn {border-radius:12px;transition:background-color .2s,border-color .2s,transform .2s}
+.site-header .theme-btn:hover,.site-header .command-btn:hover {transform:translateY(-2px);border-color:var(--cyan)}
+.site-header .header-cta {min-height:39px;border-radius:11px;padding-inline:17px;box-shadow:0 6px 22px rgba(13,168,231,.13)}
+.site-header.is-condensed .header-inner {height:86px;grid-template-rows:53px 30px}
+.site-header.is-condensed .nav-center-logo {top:4px;width:46px;height:46px;border-radius:15px}
+.site-header.is-condensed .nav-center-logo img {width:41px;height:41px}
+.site-header.is-condensed .nav-links a {font-size:11px}
+html[data-theme="light"] .site-header[data-portfolio-header] {background:rgba(248,252,255,.96);border-color:rgba(8,123,182,.25)}
+html[data-theme="light"] .site-header .nav-center-logo {box-shadow:0 0 0 4px rgba(21,167,215,.1),0 8px 21px rgba(19,66,112,.18)}
+/* Portrait and interactive areas maintain hierarchy while gaining movement. */
+.hero .hero-grid {align-items:center}
+.hero .portrait-card {box-shadow:0 20px 52px rgba(0,22,65,.19)}
+.hero .portrait-wrap:hover .portrait-card {box-shadow:0 26px 60px rgba(5,82,132,.22)}
+.hero .hero-actions .btn {transition:transform .24s var(--cm-motion),box-shadow .24s,border-color .24s}
+.hero .hero-actions .btn:hover {box-shadow:0 10px 25px rgba(5,138,215,.15)}
+/* The handwritten signature sits ABOVE a single printed name, not across a second block. */
+#about .signature-seal {position:relative;display:flex!important;flex-direction:column;align-items:center;justify-content:center;gap:0!important;text-align:center;width:min(100%,810px);margin:48px auto 0!important;padding:29px clamp(18px,4vw,46px) 26px!important;border:1px solid var(--line-strong);border-radius:25px;overflow:hidden!important;background:radial-gradient(ellipse at 50% -15%,var(--cyan-faint),transparent 70%),var(--panel);box-shadow:0 18px 48px rgba(0,13,44,.10)}
+#about .signature-seal::before {content:"";position:absolute;top:0;left:15%;right:15%;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:.9}
+#about .signature-seal::after {content:"";position:absolute;right:-62px;bottom:-92px;width:225px;height:225px;border:1px solid var(--line);border-radius:50%;pointer-events:none}
+.signature-eyebrow {font-size:10px;font-weight:800;letter-spacing:.18em;color:var(--cyan)}
+.signature-center {display:flex;flex-direction:column;align-items:center;width:100%;margin-top:1px;position:relative;z-index:2}
+.signature-art {position:relative;width:min(340px,100%);height:164px;margin:0 auto -17px;overflow:visible;transition:transform .65s var(--cm-motion)}
+.signature-image {position:absolute;display:block!important;inset:-13px 0 auto 0!important;width:100%!important;height:187px!important;max-width:none!important;object-fit:contain!important;filter:drop-shadow(0 2px 8px rgba(8,193,238,.16));transform:none!important;transition:opacity .25s ease!important}
+.signature-on-dark {opacity:1;visibility:visible}
+.signature-on-light {opacity:0;visibility:hidden}
+html[data-theme="light"] .signature-on-dark {opacity:0;visibility:hidden}
+html[data-theme="light"] .signature-on-light {opacity:1;visibility:visible;filter:drop-shadow(0 2px 7px rgba(2,87,139,.1))}
+.signature-seal:hover .signature-art {transform:translateY(-4px)}
+.signature-name {font-family:Manrope,sans-serif;font-size:clamp(24px,3.2vw,34px);line-height:1.2;font-weight:800;letter-spacing:-.055em;color:var(--text)}
+.signature-underline {width:87px;height:2px;margin:18px auto 16px;border-radius:5px;background:linear-gradient(90deg,transparent,var(--cyan),transparent)}
+.signature-role {max-width:560px;margin:0;color:var(--sub);font-size:12px;line-height:1.75}
+.signature-footnote {display:block;margin-top:17px;color:var(--muted);font-size:10px;letter-spacing:.02em}
+/* Footer: single cohesive visual unit and centered CM identity. */
+.footer {background:radial-gradient(ellipse at 48% 0%,rgba(13,123,200,.16),transparent 47%),linear-gradient(135deg,#03112c 0%,#06214a 48%,#03132d 100%)!important;padding:0!important;position:relative;border-top:1px solid rgba(34,191,240,.36)}
+.footer::before {height:2px;opacity:.7;background:linear-gradient(90deg,transparent 12%,#1385d3,#25ecf3,#1385d3,transparent 88%)}
+.footer-shell {padding:38px 0 0!important;position:relative}
+.footer-kicker {margin:0 0 14px!important;color:#78ddec;font-weight:800;font-size:10px;letter-spacing:.19em;text-align:center}
+.footer-rework-lead {display:flex;align-items:center;justify-content:space-between;gap:24px;padding:25px clamp(22px,4vw,40px);border:1px solid rgba(70,183,230,.24);border-radius:23px;background:linear-gradient(120deg,rgba(16,92,152,.24),rgba(6,28,63,.42));box-shadow:0 14px 36px rgba(1,7,23,.12)}
+.footer-rework-copy h2 {margin:0;font:800 clamp(27px,3.7vw,43px)/1.12 Manrope,sans-serif;letter-spacing:-.054em;color:#f1fbff}
+.footer-rework-copy h2 span {color:#3bddec}
+.footer-rework-copy p {max-width:540px;margin:12px 0 0;color:#b8d2ed;font-size:13px;line-height:1.7}
+.footer-rework-cta {flex:none;white-space:nowrap}
+.footer-brand-stage {display:flex;align-items:center;flex-direction:column;text-align:center;position:relative;isolation:isolate;padding:31px 0 27px}
+.footer-logo-halo {display:grid;place-items:center;position:relative;width:100px;height:100px;margin:0 auto 13px}
+.footer-logo-halo::before {content:"";position:absolute;inset:-7px;border-radius:30px;border:1px solid rgba(52,224,245,.35);transform:rotate(9deg);pointer-events:none}
+.footer-logo-halo::after {content:"";position:absolute;inset:5px;border-radius:22px;border:1px solid rgba(52,224,245,.23);pointer-events:none}
+.footer-logo-halo .footer-centered-logo {width:91px;height:91px;margin:0!important;border-radius:25px;position:relative;z-index:1;background:linear-gradient(145deg,#041b43,#073b71);box-shadow:0 12px 40px rgba(0,13,32,.38),0 0 24px rgba(9,168,235,.11)}
+.footer-logo-halo .footer-centered-logo img {width:81px;height:81px;object-fit:contain;border-radius:20px}
+.footer-brand-name {font:800 clamp(22px,3vw,29px)/1.18 Manrope,sans-serif;letter-spacing:-.055em;color:#f8fcff}
+.footer-brand-role {max-width:540px;color:#bad6e8!important;margin:8px 0 0;font-size:12px!important;line-height:1.75;text-wrap:balance}
+.footer-navigation {display:flex;justify-content:center;gap:clamp(44px,8vw,130px);padding:23px 0 30px;border-top:1px solid rgba(105,197,235,.2);border-bottom:1px solid rgba(105,197,235,.2)}
+.footer-nav-group {display:flex;flex-wrap:wrap;justify-content:center;align-content:start;gap:10px 19px;max-width:530px}
+.footer-group-label {flex:0 0 100%;width:100%;text-align:center;color:#64dcf4;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:2px}
+.footer-nav-group a {font-size:12px;font-weight:700;color:#b9d3e9;border-bottom:1px solid transparent;transition:transform .25s var(--cm-motion),color .25s,border-color .25s}
+.footer-nav-group a:hover,.footer-nav-group a:focus-visible {color:#66ebf5;transform:translateY(-2px);border-color:rgba(73,215,240,.58)}
+.footer-rework-bottom {display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:20px 0 25px;color:#8eabc8;font-size:11px}
+/* Focusable micro-movement, section entrance cues, consistent with reduced-motion support. */
+@keyframes cm-section-in-down {from{opacity:.55;transform:translateY(17px)}to{opacity:1;transform:none}}
+@keyframes cm-section-in-up {from{opacity:.55;transform:translateY(-13px)}to{opacity:1;transform:none}}
+@keyframes cm-card-arrival {from{opacity:.75;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes cm-indicator {from{transform:scaleX(.05);opacity:.15}to{transform:scaleX(1);opacity:1}}
+body.motion-enhanced .section.cm-just-entered .section-top h2,
+body.motion-enhanced .section.cm-just-entered .about-intro h2,
+body.motion-enhanced .section.cm-just-entered .contact-info h2 {animation:cm-section-in-down .8s var(--cm-motion) both}
+body.motion-enhanced[data-scroll-direction="up"] .section.cm-just-entered .section-top h2,
+body.motion-enhanced[data-scroll-direction="up"] .section.cm-just-entered .about-intro h2,
+body.motion-enhanced[data-scroll-direction="up"] .section.cm-just-entered .contact-info h2 {animation-name:cm-section-in-up}
+body.motion-enhanced .section.cm-just-entered .section-top::before {animation:cm-indicator .65s var(--cm-motion) both;transform-origin:left}
+body.motion-enhanced .section.cm-just-entered .project-card,
+body.motion-enhanced .section.cm-just-entered .expert-card {animation:cm-card-arrival .7s var(--cm-motion) both}
+body.motion-enhanced .section.cm-just-entered .project-card:nth-child(2),body.motion-enhanced .section.cm-just-entered .expert-card:nth-child(2){animation-delay:.07s}
+body.motion-enhanced .section.cm-just-entered .project-card:nth-child(3),body.motion-enhanced .section.cm-just-entered .expert-card:nth-child(3){animation-delay:.13s}
+body.motion-enhanced .section.cm-just-entered .project-card:nth-child(4),body.motion-enhanced .section.cm-just-entered .expert-card:nth-child(4){animation-delay:.19s}
+@media (min-width:881px) {html{scroll-padding-top:112px}}
+@media (max-width:1120px) {.site-header .nav-links{gap:18px}}
+@media (max-width:880px) {
+  html {scroll-padding-top:78px}
+  .site-header .header-inner,.site-header.is-condensed .header-inner {height:72px;grid-template-columns:minmax(0,1fr) 55px minmax(0,1fr);grid-template-rows:72px}
+  .site-header .header-inner>nav {grid-column:1/-1;grid-row:1;justify-self:stretch}
+  .site-header .nav-links {top:71px}
+  .site-header .nav-center-logo,.site-header.is-condensed .nav-center-logo {top:10px;width:50px;height:50px}
+  .site-header .nav-center-logo img,.site-header.is-condensed .nav-center-logo img {width:44px;height:44px}
+  .site-header .header-inner>.brand-wordmark{max-width:170px}
+  .site-header .nav-actions{gap:6px}
+  .footer-rework-lead {padding:25px}
+}
+@media (max-width:650px) {
+  .site-header .header-inner,.site-header.is-condensed .header-inner {height:67px;grid-template-rows:67px;grid-template-columns:minmax(0,1fr) 46px minmax(0,1fr)}
+  .site-header .header-inner>.brand-wordmark {max-width:110px}
+  .site-header .brand-wordmark .brand-copy{font-size:10px}
+  .site-header .brand-wordmark .brand-copy small {font-size:6.8px;letter-spacing:.07em}
+  .site-header .nav-center-logo,.site-header.is-condensed .nav-center-logo {top:11px;width:45px;height:45px}
+  .site-header .nav-center-logo img,.site-header.is-condensed .nav-center-logo img {width:40px;height:40px}
+  .site-header .nav-links {top:66px}
+  #about .signature-seal {padding:26px 18px 22px!important;margin-top:30px!important}
+  .signature-art {height:143px;width:min(300px,100%);margin-bottom:-10px}
+  .signature-image {height:166px!important}
+  .signature-footnote {font-size:9.5px}
+  .footer-shell {padding-top:26px!important}
+  .footer-rework-lead {display:block;text-align:center;padding:25px 17px}
+  .footer-rework-copy h2 {font-size:30px}
+  .footer-rework-copy p {margin-inline:auto}
+  .footer-rework-cta {margin-top:19px;max-width:100%;white-space:normal}
+  .footer-brand-stage {padding:25px 0 24px}
+  .footer-navigation {gap:25px;padding:22px 0 25px;flex-direction:column}
+  .footer-nav-group {max-width:none;gap:10px 17px}
+  .footer-rework-bottom {display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;padding:18px 0 24px}
+}
+@media (max-width:400px) {
+  .site-header .header-inner>.brand-wordmark{max-width:102px}
+  .site-header .nav-center-logo,.site-header.is-condensed .nav-center-logo {top:13px;width:41px;height:41px}
+  .site-header .nav-center-logo img,.site-header.is-condensed .nav-center-logo img {width:36px;height:36px}
+  .site-header .command-btn{display:none}
+}
+@media (prefers-reduced-motion:reduce) {
+  .site-header *, .section *, .footer *, .signature-art {animation:none!important;transition:none!important}
+  html {scroll-behavior:auto}
+}
+/* Precise separation: original ink remains fully above the printed name. */
+.signature-art {width:235px;height:182px;margin:8px auto 10px}
+.signature-image {inset:0!important;width:100%!important;height:182px!important}
+.signature-name {margin-top:0}
+@media(max-width:650px){
+  .signature-art{width:205px;height:163px;margin:7px auto 10px}
+  .signature-image{height:163px!important}
+  .footer-rework-bottom{padding-bottom:83px}
+}
+html {overflow-x:clip}
