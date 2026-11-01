@@ -5,7 +5,7 @@
   const $$ = (s, root = document) => Array.from(root.querySelectorAll(s));
   const doc = document.documentElement;
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const PROJECTS = {"rhu-morong":{"short":"RHU Morong Health System","category":"Healthcare · Academic team project","role":"Responsive interface architecture, UI/UX decisions, workflow design, and collaboration on backend integration.","stack":["PHP","MySQL","Responsive UI","UI/UX"],"number":"01","title":"RHU Morong Health System","description":"A healthcare management system for the Rural Health Unit of Morong, Rizal, built to improve patient intake, appointment scheduling, and record-management workflows.","url":"/work/rhu-morong/"},"mbmis":{"short":"Menguito Businesses MIS","category":"Business operations · Full-stack","role":"Full-stack application development covering interfaces, PHP/MySQL operations, role-aware access, system modules, testing, and deployment.","stack":["Full-stack","PHP","MySQL","Bootstrap"],"number":"02","title":"Menguito Businesses MIS","description":"A full-stack management information system built to bring Menguito Businesses operations, records, services, assets, collections, financial information, and role-based workspaces into one secure web platform.","url":"/work/mbmis/"},"angono-career-assessment":{"short":"Angono NHS Career Assessment","category":"Education · Independent academic project","role":"Independent database, front-end, system features, and deployment work across the project lifecycle.","stack":["Full-stack","Education","Assessment UX"],"number":"03","title":"Angono NHS Career Assessment","description":"A web-based career guidance tool for incoming Senior High School students to explore suitable SHS strands using interests, skills, and academic inclinations.","url":"/work/angono-career-assessment/"},"ritremis":{"short":"RITREMIS","category":"Real estate · Professional collaboration","role":"Front-end implementation, UI/UX and responsive interface design in collaboration with the development team.","stack":["UI/UX","Responsive UI","Collaboration"],"number":"04","title":"RITREMIS","description":"A real-estate management information platform designed to centralize property information and improve how stakeholders work with property-related data.","url":"/work/ritremis/"},"howcan-i-help":{"short":"HowCan-i-Help (HCIH)","category":"Healthcare · Professional collaboration","role":"Interface implementation, user-experience improvements, front-end work, and project coordination.","stack":["UI/UX","Front-end","Collaboration"],"number":"05","title":"HowCan-i-Help","description":"A healthcare and assistance platform developed professionally at Real IT OPC to support clinic workflows and connected user needs.","url":"/work/howcan-i-help/"}};
+  const PROJECTS = {"rhu-morong":{"short":"RHU Morong Health System","category":"Healthcare · Academic team project","role":"Responsive interface architecture, UI/UX decisions, workflow design, and collaboration on backend integration.","stack":["PHP","MySQL","Responsive UI","UI/UX"],"number":"01","title":"RHU Morong Health System","description":"A healthcare management system for the Rural Health Unit of Morong, Rizal, built to improve patient intake, appointment scheduling, and record-management workflows.","url":"/work/rhu-morong/","image":"/assets/images/projects/rhu-morong/showcase.webp","gallery":[{"path":"/assets/images/projects/rhu-morong/screen-01.webp","caption":"Public-facing sign-in interface"},{"path":"/assets/images/projects/rhu-morong/screen-02.webp","caption":"Administrative dashboard overview"},{"path":"/assets/images/projects/rhu-morong/screen-03.webp","caption":"Health center management view"}]},"mbmis":{"short":"Menguito Businesses MIS","category":"Business operations · Full-stack","role":"Full-stack application development covering interfaces, PHP/MySQL operations, role-aware access, system modules, testing, and deployment.","stack":["Full-stack","PHP","MySQL","Bootstrap"],"number":"02","title":"Menguito Businesses MIS","description":"A full-stack management information system built to bring Menguito Businesses operations, records, services, assets, collections, financial information, and role-based workspaces into one secure web platform.","url":"/work/mbmis/","image":"/assets/images/projects/mbmis/showcase.webp","gallery":[{"path":"/assets/images/projects/mbmis/screen-01.webp","caption":"Menguito Businesses access screen"},{"path":"/assets/images/projects/mbmis/screen-02.webp","caption":"Business dashboard and navigation"},{"path":"/assets/images/projects/mbmis/screen-03.webp","caption":"System status module"}]},"angono-career-assessment":{"short":"Angono NHS Career Assessment","category":"Education · Independent academic project","role":"Independent database, front-end, system features, and deployment work across the project lifecycle.","stack":["Full-stack","Education","Assessment UX"],"number":"03","title":"Angono NHS Career Assessment","description":"A web-based career guidance tool for incoming Senior High School students to explore suitable SHS strands using interests, skills, and academic inclinations.","url":"/work/angono-career-assessment/","image":"/assets/images/projects/angono-career-assessment/showcase.webp","gallery":[{"path":"/assets/images/projects/angono-career-assessment/screen-01.webp","caption":"Career assessment welcome screen"},{"path":"/assets/images/projects/angono-career-assessment/screen-02.webp","caption":"Student sign-in screen"},{"path":"/assets/images/projects/angono-career-assessment/screen-03.webp","caption":"Administrator sign-in screen"}]},"ritremis":{"short":"RITREMIS","category":"Real estate · Professional collaboration","role":"Front-end implementation, UI/UX and responsive interface design in collaboration with the development team.","stack":["UI/UX","Responsive UI","Collaboration"],"number":"04","title":"RITREMIS","description":"A real-estate management information platform designed to centralize property information and improve how stakeholders work with property-related data.","url":"/work/ritremis/","image":"/assets/images/projects/ritremis/showcase.webp","gallery":[{"path":"/assets/images/projects/ritremis/screen-01.webp","caption":"Administrative dashboard interface"},{"path":"/assets/images/projects/ritremis/screen-02.webp","caption":"Package and add-on management interface"}]},"howcan-i-help":{"short":"HowCan-i-Help (HCIH)","category":"Healthcare · Professional collaboration","role":"Interface implementation, user-experience improvements, front-end work, and project coordination.","stack":["UI/UX","Front-end","Collaboration"],"number":"05","title":"HowCan-i-Help","description":"A healthcare and assistance platform developed professionally at Real IT OPC to support clinic workflows and connected user needs.","url":"/work/howcan-i-help/","image":"/assets/images/projects/howcan-i-help/showcase.webp","gallery":[{"path":"/assets/images/projects/howcan-i-help/screen-01.webp","caption":"Public-facing clinic support homepage"}]}};
   const sections = [
     {title:'Home', subtitle:'Introduction', url:'/#home'},
     {title:'Expertise', subtitle:'Technical skills & specialties', url:'/#expertise'},
@@ -13,7 +13,7 @@
     {title:'My process', subtitle:'How I approach development', url:'/#approach'},
     {title:'About', subtitle:'Education and experience', url:'/#about'},
     {title:'Contact', subtitle:'Send a message', url:'/#contact'},
-    {title:'Original résumé', subtitle:'View the unmodified PDF', url:'/assets/docs/Cathyrine-Menguito-Original-Resume.pdf'},
+    {title:'Final Resume', subtitle:'View the unmodified PDF', url:'/assets/docs/Final-Resume-Cathyrine-Menguito.pdf'},
     {title:'Résumé preview', subtitle:'Open the built-in PDF viewer', url:'/resume.html'}
   ];
   const locations = [...sections, ...Object.entries(PROJECTS).map(([slug,p])=>({title:p.title, subtitle:p.category, url:p.url, terms:p.description}))];
@@ -63,7 +63,7 @@
 
   // A small rotating subtitle uses only verified skills, avoids exaggerated metrics.
   const dynamic=$('#dynamicRole');
-  if(dynamic && !reduce.matches){const phrases=['web applications','database-backed systems','responsive interfaces','user-centered workflows'];let i=0;
+  if(dynamic && !reduce.matches){const phrases=['software systems','database-backed applications','responsive interfaces','brand identity design','user-centered workflows'];let i=0;
     window.setInterval(()=>{i=(i+1)%phrases.length;dynamic.animate([{opacity:1,transform:'translateY(0)'},{opacity:0,transform:'translateY(-7px)'},{opacity:1,transform:'translateY(0)'}],{duration:370,easing:'ease-out'});dynamic.textContent=phrases[i]},3700);
   }
   // Mouse-follow spotlight remains understated; not enabled for touch or reduced motion.
@@ -84,19 +84,76 @@
   $('#resetProjects')?.addEventListener('click',()=>{activeFilter='all';if(search)search.value='';filterProjects();search?.focus()});
   if(cards.length)filterProjects();
 
-  // Native dialog for project quick looks. Content source is curated case-study metadata.
+  // Real-project quick views: accessible slideshow using only the uploaded screen captures.
   const projectDialog=$('#projectDialog');let lastModalOpener=null;
-  $$('.quick-view').forEach(btn=>btn.addEventListener('click',()=>{
-    const project=PROJECTS[btn.dataset.quick];if(!project||!projectDialog)return;
-    lastModalOpener=btn;
+  const modalImg=$('#projectModalImage'),modalThumbs=$('#projectSlideThumbs');
+  const lightbox=$('#projectLightbox');
+  let currentSlides=[],currentSlideIndex=0,modalFocusReturn=null,dragX=null;
+  const makeSlides=(project)=>[
+    {path:project.image,caption:'Project showcase · actual screenshot with branded framing'},
+    ...(project.gallery||[]).map(s=>({path:s.path,caption:s.caption||'Actual system screenshot'}))
+  ];
+  function paintSlide(index){
+    if(!currentSlides.length)return;
+    currentSlideIndex=(index+currentSlides.length)%currentSlides.length;
+    const slide=currentSlides[currentSlideIndex];
+    modalImg.src=slide.path;
+    modalImg.alt=slide.caption;
+    $('#projectSlideCaption').textContent=slide.caption;
+    $('#projectSlideCounter').textContent=String(currentSlideIndex+1).padStart(2,'0')+' / '+String(currentSlides.length).padStart(2,'0');
+    $$('.modal-carousel-thumb',modalThumbs).forEach((b,i)=>{
+      b.classList.toggle('is-selected',i===currentSlideIndex);
+      b.setAttribute('aria-pressed',String(i===currentSlideIndex));
+      b.setAttribute('aria-label',`Show screenshot ${i+1} of ${currentSlides.length}: ${currentSlides[i].caption}`);
+    });
+  }
+  function openProject(button){
+    const project=PROJECTS[button.dataset.quick];if(!project||!projectDialog)return;
+    lastModalOpener=button;
     $('#projectModalTitle').textContent=project.title;
     $('#projectModalCategory').textContent=project.category;
     $('#projectModalDescription').textContent=project.description;
     $('#projectModalRole').textContent=project.role;
     const tags=$('#projectModalTags');tags.replaceChildren();project.stack.forEach(x=>{const tag=document.createElement('span');tag.textContent=x;tags.append(tag)});
     $('#projectModalLink').href=project.url;
+    currentSlides=makeSlides(project);
+    modalThumbs.replaceChildren();
+    currentSlides.forEach((slide,i)=>{
+      const button=document.createElement('button');button.type='button';button.className='modal-carousel-thumb';
+      const img=document.createElement('img');img.src=slide.path;img.alt='';img.loading='lazy';button.append(img);
+      const num=document.createElement('small');num.textContent=String(i+1).padStart(2,'0');button.append(num);
+      button.addEventListener('click',()=>paintSlide(i));modalThumbs.append(button);
+    });
+    paintSlide(0);
     if(!projectDialog.open)projectDialog.showModal();
-  }));
+    $('#projectSlideNext')?.focus();
+  }
+  $$('.quick-view,.project-image-quick').forEach(btn=>btn.addEventListener('click',()=>openProject(btn)));
+  $('#projectSlidePrev')?.addEventListener('click',()=>paintSlide(currentSlideIndex-1));
+  $('#projectSlideNext')?.addEventListener('click',()=>paintSlide(currentSlideIndex+1));
+  projectDialog?.addEventListener('keydown',e=>{
+    if(lightbox?.open)return;
+    if(e.key==='ArrowLeft'||e.key==='ArrowRight'){
+      // Keep arrow behavior scoped to the project dialog, not form fields.
+      if(e.target.matches('input, textarea, select'))return;
+      e.preventDefault();paintSlide(currentSlideIndex+(e.key==='ArrowRight'?1:-1));
+    }
+  });
+  const openSlide=$('#projectSlideOpen');
+  openSlide?.addEventListener('pointerdown',e=>{dragX=e.clientX});
+  openSlide?.addEventListener('pointerup',e=>{if(dragX===null)return;const dx=e.clientX-dragX;dragX=null;if(Math.abs(dx)>45){paintSlide(currentSlideIndex+(dx<0?1:-1));openSlide.dataset.swiped='yes'}});
+  openSlide?.addEventListener('click',()=>{
+    if(openSlide.dataset.swiped==='yes'){delete openSlide.dataset.swiped;return}
+    if(!lightbox||!currentSlides.length)return;
+    modalFocusReturn=document.activeElement;
+    const slide=currentSlides[currentSlideIndex];
+    $('#projectLightboxImage').src=slide.path;$('#projectLightboxImage').alt=slide.caption;
+    $('#projectLightboxCaption').textContent=slide.caption;
+    lightbox.showModal();$('#projectLightboxClose').focus();
+  });
+  $('#projectLightboxClose')?.addEventListener('click',()=>lightbox?.close());
+  lightbox?.addEventListener('click',e=>{if(e.target===lightbox)lightbox.close()});
+  lightbox?.addEventListener('close',()=>modalFocusReturn?.focus?.());
   // One closure routine for every modal, with sensible focus restoration.
   $$('[data-close-dialog]').forEach(btn=>btn.addEventListener('click',()=>btn.closest('dialog')?.close()));
   $$('dialog').forEach(dialog=>{
@@ -149,7 +206,8 @@
   const skillData={
     web:{label:'Frontend and web application foundations',tags:['HTML','CSS','JavaScript','PHP','Bootstrap']},
     data:{label:'Data and system implementation',tags:['MySQL / MariaDB','SQL','phpMyAdmin','CRUD Operations','Database-backed Workflows']},
-    practice:{label:'Interface practices, development and collaboration tools',tags:['Responsive Web Design','UI/UX Design','System Testing','Debugging','Documentation','VS Code','Git','GitHub','Hostinger','Microsoft Office','Google Workspace','Canva']}
+    practice:{label:'Interface practices, development and collaboration tools',tags:['Responsive Web Design','UI/UX Design','System Testing','Debugging','Documentation','VS Code','Git','GitHub','Hostinger','Microsoft Office','Google Workspace','Canva']},
+    brand:{label:'Brand, logo and identity presentation',tags:['Brand Identity Concepts','Logo Design','Typography','Color Systems','Visual Style Guides','Brand Consistency','Canva','Digital Design Assets']}
   };
   const skillTabs=$$('.skill-tabs [role="tab"]');
   function showSkills(key,focus){const data=skillData[key];if(!data)return;
@@ -179,4 +237,62 @@
   const year=$('#year');if(year)year.textContent=String(new Date().getFullYear());
   // Cleanup old service workers from the original green portfolio, preventing stale cached pages.
   if('serviceWorker' in navigator){navigator.serviceWorker.getRegistrations().then(regs=>regs.forEach(x=>x.unregister())).catch(()=>{});}
+
+  // Real-system screenshot gallery, keyboard operable and without external dependencies.
+  $$('.gallery-block').forEach(gallery=>{
+    const main=$('.gallery-main',gallery),caption=$('.gallery-caption',gallery),counter=$('.gallery-counter',gallery);
+    const thumbs=$$('.gallery-thumb',gallery);
+    thumbs.forEach((btn,i)=>btn.addEventListener('click',()=>{
+      if(!main)return;
+      main.src=btn.dataset.image;main.alt=btn.dataset.caption||'Actual system screenshot';
+      caption.textContent=btn.dataset.caption||'';
+      counter.textContent=String(i+1).padStart(2,'0')+' / '+String(thumbs.length).padStart(2,'0');
+      thumbs.forEach(th=>{th.classList.toggle('is-active',th===btn);th.setAttribute('aria-pressed',th===btn?'true':'false')});
+    }));
+    const expand=$('.gallery-expand',gallery);
+    expand?.addEventListener('click',()=>{
+      const dialog=document.createElement('dialog');dialog.className='screenshot-dialog';
+      const close=document.createElement('button');close.type='button';close.className='dialog-close';close.textContent='✕';close.setAttribute('aria-label','Close enlarged screenshot');
+      const image=document.createElement('img');image.src=main.src;image.alt=main.alt;
+      dialog.append(close,image);document.body.append(dialog);
+      close.addEventListener('click',()=>dialog.close());
+      dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
+      dialog.addEventListener('close',()=>{dialog.remove();expand.focus()});
+      dialog.showModal();close.focus();
+    });
+  });
+  // One and only one versatile up/down control on EVERY portfolio page.
+  // Home jumps between named sections. Case studies and resume jump between meaningful reading landmarks.
+  const prevSection=$('#sectionPrev'),nextSection=$('#sectionNext'),railPosition=$('.rail-current');
+  if(prevSection&&nextSection){
+    const isHome=!!$('#expertise');
+    const unique=els=>els.filter((el,i)=>el&&els.indexOf(el)===i);
+    const getTargets=()=>{
+      if(isHome)return unique([...$$('main > section[id]'),$('#siteFooter')].filter(Boolean));
+      const candidates=$$('main > .case-hero,main > .case-gallery-section,main .case-overview,main .case-grid,main .case-next,main .resume-layout,main .resume-preview,main > section,footer');
+      let last=-1000;
+      return unique(candidates).filter(el=>{const top=el.getBoundingClientRect().top+scrollY;if(top-last<180)return false;last=top;return true});
+    };
+    const activeIndex=(targets)=>{
+      const y=scrollY+Math.min(innerHeight*.28,200);let selected=0;
+      targets.forEach((el,i)=>{if(el.getBoundingClientRect().top+scrollY<=y)selected=i});return selected;
+    };
+    const jump=direction=>{
+      const targets=getTargets();if(!targets.length)return;
+      const here=activeIndex(targets);let next=here+direction;
+      // A jump to the page's first/last landmark is always possible.
+      next=Math.max(0,Math.min(next,targets.length-1));
+      targets[next].scrollIntoView({behavior:reduce.matches?'auto':'smooth',block:'start'});
+    };
+    prevSection.addEventListener('click',()=>jump(-1));nextSection.addEventListener('click',()=>jump(1));
+    let queued=false;
+    const sync=()=>{queued=false;const targets=getTargets(),i=activeIndex(targets);
+      prevSection.disabled=i<=0;nextSection.disabled=i>=targets.length-1;
+      if(railPosition){railPosition.textContent=`${String(i+1).padStart(2,'0')}/${String(targets.length).padStart(2,'0')}`;railPosition.setAttribute('aria-label',`Section ${i+1} of ${targets.length}`)};
+    };
+    const queue=()=>{if(!queued){queued=true;requestAnimationFrame(sync)}};
+    addEventListener('scroll',queue,{passive:true});addEventListener('resize',queue,{passive:true});
+    sync();
+  }
+
 })();
