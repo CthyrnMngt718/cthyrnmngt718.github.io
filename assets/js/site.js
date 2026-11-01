@@ -12,9 +12,10 @@
     {title:'Projects', subtitle:'Selected academic & professional work', url:'/#work'},
     {title:'My process', subtitle:'How I approach development', url:'/#approach'},
     {title:'About', subtitle:'Education and experience', url:'/#about'},
+    {title:'Beyond My Current Stack', subtitle:'Flutter, Docker, Go, testing, cloud and Rust learning interests', url:'/#learning'},
     {title:'Contact', subtitle:'Send a message', url:'/#contact'},
     {title:'Final Resume', subtitle:'View the unmodified PDF', url:'/assets/docs/Final-Resume-Cathyrine-Menguito.pdf'},
-    {title:'Résumé preview', subtitle:'Open the built-in PDF viewer', url:'/resume.html'}
+    {title:'Resume preview', subtitle:'Open the built-in PDF viewer', url:'/resume.html'}
   ];
   const locations = [...sections, ...Object.entries(PROJECTS).map(([slug,p])=>({title:p.title, subtitle:p.category, url:p.url, terms:p.description}))];
   const safeStore = {get(key){try{return localStorage.getItem(key)}catch{return null}},set(key,v){try{localStorage.setItem(key,v)}catch{}}};
