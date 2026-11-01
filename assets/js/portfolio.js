@@ -39,7 +39,7 @@
   menu?.addEventListener('click',()=>{const expanded=nav?.classList.toggle('open')||false;menu.setAttribute('aria-expanded',String(expanded));menu.setAttribute('aria-label',expanded?'Close navigation':'Open navigation');menu.textContent=expanded?'✕':'☰';});
   $$('#primaryNav a').forEach(a=>a.addEventListener('click',closeMenu));
   document.addEventListener('click',e=>{if(nav?.classList.contains('open') && !e.target.closest('.site-header'))closeMenu()});
-  window.addEventListener('resize',()=>{if(window.innerWidth>880)closeMenu()},{passive:true});
+  window.addEventListener('resize',()=>{if(window.innerWidth>1040)closeMenu()},{passive:true});
 
   // Reading progress, active section, and back to top. Throttled via RAF.
   const progress=$('#readingProgress'),toTop=$('#backToTop');let scrollQueued=false;
