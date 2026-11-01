@@ -1,0 +1,232 @@
+/* Refinement edition: accurate professional identity, centered monogram,
+   guided learning, balanced editorial layout and reversible scroll motion. */
+:root{--refine-ease:cubic-bezier(.2,.8,.2,1)}
+html{scroll-padding-top:112px}
+/* Exact centering is independent of the widths of the left/right header groups. */
+.site-header{border-bottom-color:rgba(48,188,232,.26);transition:box-shadow .35s,border-color .35s,background .35s}
+.site-header.is-condensed{box-shadow:0 12px 32px rgba(0,6,30,.18);border-bottom-color:rgba(56,215,240,.42)}
+.header-inner{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);grid-template-rows:58px 32px;height:94px;gap:0 12px;transition:height .35s var(--refine-ease),grid-template-rows .35s var(--refine-ease)}
+.site-header .header-inner>.brand-wordmark{grid-column:1;grid-row:1;justify-self:start;max-width:230px;position:relative;z-index:4}
+.site-header .header-inner>.nav-actions{grid-column:3;grid-row:1;justify-self:end;z-index:4}
+.site-header .header-inner>nav{grid-column:1/-1;grid-row:2;justify-self:center}
+.site-header .nav-center-logo{position:absolute;top:3px;left:50%;grid-column:auto;grid-row:auto;transform:translateX(-50%);margin:0;width:52px;height:52px;box-shadow:0 6px 26px rgba(3,18,47,.22),0 0 0 1px rgba(58,215,236,.08);z-index:5}
+.site-header .nav-center-logo:hover,.site-header .nav-center-logo:focus-visible{transform:translateX(-50%) translateY(-2px) scale(1.045)}
+.site-header .nav-center-logo img{width:45px;height:45px}
+.site-header .nav-links a{font-size:12px}
+.site-header .brand-wordmark .brand-copy{font-size:13px}
+.site-header .brand-wordmark .brand-copy small{font-size:9px;letter-spacing:.12em}
+.site-header .header-cta{padding:11px 16px}
+.site-header.is-condensed .header-inner{height:78px;grid-template-rows:46px 29px}
+.site-header.is-condensed .nav-center-logo{top:2px;width:43px;height:43px;border-radius:13px}
+.site-header.is-condensed .nav-center-logo img{width:38px;height:38px}
+.site-header.is-condensed .nav-links a{font-size:11px}
+.site-header .reading-progress{height:2px}
+html[data-theme="light"] .site-header{background:rgba(246,250,255,.94)}
+/* Hero clarity and intentional size */
+.hero{padding-top:78px;padding-bottom:76px;min-height:auto}
+.hero-desc{max-width:635px}
+.hero h1{font-size:clamp(45px,5.5vw,74px);line-height:1.1}
+.hero .availability{font-size:11px}
+.hero-dynamic-tip{font-size:10px}
+.hero-grid{gap:clamp(26px,4vw,62px)}
+/* Remove large empty left column beside a long, dense timeline. */
+#about{padding:82px 0 72px!important}
+#about .about-layout{grid-template-columns:minmax(0, .9fr) minmax(0,1.1fr);align-items:start;gap:clamp(32px,5vw,76px)}
+#about .about-intro{max-width:none;position:sticky;top:140px;align-self:start}
+#about .about-intro>p{font-size:14px;line-height:1.85;max-width:480px}
+#about .about-card{margin-top:26px}
+.about-facts{margin:27px 0 24px;padding:7px 20px;border:1px solid var(--line-strong);border-radius:18px;background:linear-gradient(135deg,rgba(25,139,211,.07),transparent),var(--panel)}
+.about-facts>div{display:flex;justify-content:space-between;align-items:flex-start;gap:15px;padding:13px 0;border-bottom:1px solid var(--line)}
+.about-facts>div:last-child{border:0}
+.about-facts span{color:var(--muted);font-size:11px;flex:0 0 96px}
+.about-facts strong{font-size:12px;line-height:1.4;text-align:right;font-weight:700;color:var(--text)}
+#about .timeline-item{padding-bottom:25px}
+#about .timeline-item p{line-height:1.7}
+/* Real signature clearly crosses readable name. */
+.signature-seal{margin-top:45px;margin-bottom:0;padding:25px 32px;gap:22px;background:linear-gradient(100deg,rgba(12,146,232,.08),transparent),var(--panel)}
+.signature-overprint{flex-basis:320px}
+.signature-sign{height:112px;width:330px}
+.signature-typed{top:53px;left:10px;font-size:28px;color:var(--text);opacity:.95;white-space:nowrap}
+.signature-sign img{top:-29px!important;left:59px!important;width:225px!important;height:153px!important;transform:rotate(-3deg)}
+.signature-note{align-self:center;gap:6px!important}
+.signature-note strong{font-size:19px}
+.signature-note span{max-width:325px;color:var(--sub)}
+/* Learning is an interactive roadmap, not an invented credential. */
+.learning-section{background:radial-gradient(circle at 6% 10%,rgba(0,180,231,.10),transparent 34%),var(--bg)!important;padding:78px 0 86px}
+.learning-head{margin-bottom:28px}
+.learning-layout{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:22px;align-items:stretch}
+.learning-focus,.learning-details{padding:clamp(20px,3vw,32px);border-radius:23px;min-width:0}
+.learning-focus{background:var(--panel);border:1px solid var(--line-strong)}
+.learning-caption{font-size:13px;color:var(--sub);margin:7px 0 19px}
+.learning-options{display:grid;gap:10px}
+.learning-option{display:flex;text-align:left;align-items:center;gap:14px;width:100%;padding:12px 14px;background:var(--bg2);border:1px solid var(--line);border-radius:15px;color:var(--text);cursor:pointer;transition:transform .32s var(--refine-ease),background .25s,border-color .25s,box-shadow .25s}
+.learning-option:hover,.learning-option:focus-visible{border-color:rgba(49,205,245,.65);transform:translateX(5px)}
+.learning-option.is-current{background:var(--cyan-faint);border-color:rgba(54,211,237,.7);box-shadow:inset 3px 0 var(--cyan)}
+.learning-option>span:nth-child(2){flex:1;min-width:0;display:grid;gap:1px}
+.learning-option strong{font-size:14px}
+.learning-option small{color:var(--muted);font-size:11px}
+.learning-option>span:last-child{color:var(--cyan)}
+.learning-initial{flex:none;width:44px;height:44px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(135deg,#083668,#065b99);border:1px solid rgba(40,183,230,.4);color:#d5f9ff;font-weight:800;font-size:15px}
+.learning-details{border:1px solid rgba(43,183,236,.38);position:relative;overflow:hidden;background:radial-gradient(circle at 95% 0,rgba(20,130,209,.13),transparent 45%),var(--panel)}
+.learning-details:after{content:'</>';position:absolute;right:24px;top:65px;opacity:.06;font-size:90px;font-weight:900;pointer-events:none;color:var(--cyan)}
+.learning-details .eyebrow{font-size:10px}
+.learning-index{display:block;color:var(--cyan);font-size:13px;font-weight:800;margin-top:35px;letter-spacing:.13em}
+.learning-details h3{font-size:clamp(34px,4vw,58px);line-height:1.15;letter-spacing:-.055em;margin:11px 0 13px}
+.learning-details>p:not(.learning-truth){font-size:14px;color:var(--sub);line-height:1.75;max-width:540px}
+.learning-divider{height:1px;background:var(--line-strong);margin:27px 0 23px}
+.learning-subhead{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan)}
+.learning-concepts{margin:15px 0 28px;padding-left:20px;color:var(--text);font-size:13px;line-height:2.2}
+.learning-concepts li::marker{color:var(--cyan)}
+.learning-truth{margin-top:20px;padding:13px 15px;border:1px solid var(--line);border-radius:12px;color:var(--sub);font-size:11px;line-height:1.65;background:var(--bg2)}
+.learning-truth strong{color:var(--text)}
+.learning-details.is-changing h3,.learning-details.is-changing>p:not(.learning-truth),.learning-details.is-changing ul{animation:learning-switch .35s ease both}
+@keyframes learning-switch{from{opacity:.35;transform:translateY(9px)}to{opacity:1;transform:none}}
+/* Section scroll feedback is intentionally light; never hides content. */
+@keyframes section-heading-up{from{opacity:.62;transform:translateY(19px)}to{opacity:1;transform:translateY(0)}}
+@keyframes section-heading-down{from{opacity:.62;transform:translateY(-14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes section-arrival-line{from{width:0;opacity:0}to{width:min(130px,16vw);opacity:.65}}
+body.motion-enhanced main>.section{position:relative}
+body.motion-enhanced main>.section.section-active .section-top h2,
+body.motion-enhanced main>.section.section-active .about-intro h2,
+body.motion-enhanced main>.section.section-active .contact-info h2{animation:section-heading-up .75s var(--refine-ease) both}
+body.motion-enhanced[data-scroll-direction="up"] main>.section.section-active .section-top h2,
+body.motion-enhanced[data-scroll-direction="up"] main>.section.section-active .about-intro h2,
+body.motion-enhanced[data-scroll-direction="up"] main>.section.section-active .contact-info h2{animation-name:section-heading-down}
+body.motion-enhanced main>.section.section-active .section-top:before{content:'';position:absolute;top:-12px;left:0;height:2px;width:min(130px,16vw);border-radius:8px;background:linear-gradient(90deg,#258bff,#10dee8);animation:section-arrival-line .8s var(--refine-ease) both}
+body.motion-enhanced main>.section .section-top{position:relative}
+body.motion-enhanced .timeline-item.in-view{border-left-color:rgba(45,214,244,.6)}
+body.motion-enhanced .section-rail{transition:transform .35s ease,box-shadow .35s}
+body.motion-enhanced[data-scroll-direction="up"] .section-rail{box-shadow:0 15px 38px rgba(6,118,194,.2)}
+/* Footer: avoid the large blank band in screenshot; keep logo at the center. */
+#contact{padding:72px 0 73px}
+#collaboration{padding-top:48px!important;padding-bottom:48px!important}
+.footer{padding:16px 0 0!important;background:radial-gradient(ellipse at 50% -20%,rgba(11,107,204,.22),transparent 60%),linear-gradient(155deg,#031127,#061c3a 52%,#06132b)!important}
+.footer .footer-orbit{opacity:.15}
+.footer-intro{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:26px 30px!important;margin:19px 0 22px;border:1px solid rgba(63,166,234,.23);border-radius:22px;background:linear-gradient(120deg,rgba(12,56,112,.4),rgba(4,28,60,.35));box-shadow:0 12px 25px rgba(0,8,26,.10)}
+.footer-intro h2{font-size:clamp(23px,3vw,38px);line-height:1.16;margin:9px 0 10px}
+.footer-intro p{font-size:13px;line-height:1.6;max-width:590px}
+.footer-intro .eyebrow{color:#64e9fa}
+.footer-intro .btn{flex:none}
+.footer-identity{gap:5px;padding:10px 0 19px}
+.footer-centered-logo{width:77px;height:77px;border-radius:21px;margin:0 auto 10px}
+.footer-centered-logo img{width:69px;height:69px;border-radius:17px}
+.footer-identity>strong{font-size:21px}
+.footer-identity>p{font-size:12px;max-width:450px}
+.footer-identity .footer-proof{font-size:10px;color:#8bc3da;margin-top:8px}
+.footer-identity .footer-proof span{padding:0 4px 0 0}
+.footer-link-row{padding:20px 0 22px;gap:10px clamp(16px,2.7vw,24px)}
+.footer-bottom{padding:18px 0 19px!important}
+/* Keep vertical rail single, clear, and distinct from footer CTA. */
+.section-rail{right:18px;bottom:20px;box-shadow:0 12px 28px rgba(1,11,36,.31)}
+/* On larger screens make navigation footer and timeline more polished. */
+@media(max-width:980px){
+  #about .about-layout{gap:35px}
+  .site-header .nav-links{gap:20px}
+}
+@media(max-width:880px){
+  html{scroll-padding-top:82px}
+  .header-inner,.site-header.is-condensed .header-inner{height:70px;grid-template-rows:70px;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)}
+  .site-header .header-inner>nav{grid-column:1/-1;grid-row:1;justify-self:stretch}
+  .site-header .nav-links{top:69px;gap:0}
+  .site-header .nav-center-logo,.site-header.is-condensed .nav-center-logo{top:10px;width:49px;height:49px}
+  .site-header .nav-center-logo img,.site-header.is-condensed .nav-center-logo img{width:43px;height:43px}
+  #about .about-layout{grid-template-columns:1fr;gap:40px}
+  #about .about-intro{position:static;max-width:850px}
+  #about .timeline{max-width:760px}
+  .learning-layout{grid-template-columns:1fr}
+  .learning-options{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .learning-details{min-height:375px}
+}
+@media(max-width:650px){
+  html{scroll-padding-top:78px}
+  .site-header .brand-wordmark .brand-copy{font-size:10.5px}
+  .site-header .brand-wordmark .brand-copy small{font-size:7px;letter-spacing:.05em}
+  .site-header .nav-center-logo,.site-header.is-condensed .nav-center-logo{top:14px;width:42px;height:42px}
+  .site-header .nav-center-logo img,.site-header.is-condensed .nav-center-logo img{width:36px;height:36px}
+  .site-header .nav-actions{gap:4px}
+  .hero{padding-top:53px}
+  .hero h1{font-size:clamp(40px,10.4vw,61px)}
+  #about{padding:62px 0 58px!important}
+  .about-facts{padding:4px 14px}
+  .about-facts>div{gap:8px}
+  .about-facts span{flex-basis:78px}
+  .about-facts strong{font-size:11px}
+  .learning-section{padding:61px 0}
+  .learning-options{grid-template-columns:1fr}
+  .learning-focus,.learning-details{padding:22px}
+  .learning-details{min-height:auto}
+  .learning-option:hover{transform:none}
+  .signature-seal{display:grid;grid-template-columns:1fr;gap:9px;padding:21px 20px}
+  .signature-overprint,.signature-note{min-width:0;flex:auto}
+  .signature-sign{width:min(100%,310px);height:100px}
+  .signature-typed{font-size:24px;top:51px}
+  .signature-sign img{width:190px!important;height:130px!important;left:46px!important;top:-25px!important}
+  .footer-intro{display:block;padding:25px 23px!important;margin:16px 0}
+  .footer-intro .btn{margin-top:19px}
+  .footer-identity{padding:19px 0 18px}
+  .footer-intro h2{font-size:clamp(25px,7vw,32px)}
+  #contact{padding:62px 0 61px}
+  .footer-link-row{gap:12px 20px}
+}
+@media(max-width:410px){
+  .site-header .nav-center-logo,.site-header.is-condensed .nav-center-logo{width:39px;height:39px;top:15px}
+  .site-header .nav-center-logo img,.site-header.is-condensed .nav-center-logo img{width:34px;height:34px}
+  .site-header .brand-wordmark .brand-copy{font-size:9.8px}
+  .footer-identity>p{max-width:275px}
+}
+@media(prefers-reduced-motion:reduce){
+  .site-header,.header-inner,.nav-center-logo,.learning-option,.learning-details *{animation:none!important;transition:none!important}
+  body.motion-enhanced main>.section.section-active .section-top h2,
+  body.motion-enhanced main>.section.section-active .about-intro h2,
+  body.motion-enhanced main>.section.section-active .contact-info h2,
+  body.motion-enhanced main>.section.section-active .section-top:before{animation:none!important}
+}
+
+/* Make sure the single floating rail does not overlap the rightmost social link on phones. */
+@media(max-width:650px){.hero-socials{padding-right:38px;row-gap:12px}.section-rail{right:8px;bottom:12px}.section-rail button{width:30px;height:27px;font-size:19px}}
+
+
+/* Beyond My Current Stack — six guided exploration topics, with no invented proficiencies. */
+.learning-head{align-items:end;gap:28px}
+.learning-head p{max-width:480px}
+.learning-head p strong{font-weight:750;color:var(--text)}
+.learning-priorities{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:-1px 0 20px}
+.learning-priority{display:flex;align-items:center;gap:13px;padding:17px 19px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(125deg,rgba(0,173,239,.075),transparent 75%),var(--panel);transition:border-color .25s ease,transform .3s var(--refine-ease)}
+.learning-priority:hover{transform:translateY(-3px);border-color:var(--line-strong)}
+.learning-priority-num{font-size:22px;letter-spacing:-.05em;font-weight:800;color:var(--cyan)}
+.learning-priority>div{flex:1;display:grid;gap:3px;min-width:0}
+.learning-priority strong{font-size:12px;line-height:1.35}
+.learning-priority small{font-size:10.5px;color:var(--muted)}
+.learning-priority>span:last-child{font-size:18px;color:var(--cyan);opacity:.7}
+.learning-focus-head{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.learning-count-badge{font-size:10px;white-space:nowrap;border-radius:50px;padding:7px 11px;background:var(--cyan-faint);border:1px solid var(--line-strong);color:var(--cyan);font-weight:800}
+.learning-options{gap:8px}
+.learning-option{padding:10px 12px;min-height:60px}
+.learning-option .learning-initial{width:40px;height:40px;font-size:13px}
+.learning-option strong{font-size:13px}
+.learning-option small{font-size:10.5px}
+.learning-details{display:flex;flex-direction:column}
+.learning-detail-meta{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.learning-topic-type{font-size:10px;color:var(--sub);padding:7px 10px;border-radius:99px;border:1px solid var(--line);background:var(--bg2)}
+.learning-details:after{opacity:.035;font-size:86px;top:80px}
+.learning-index{margin-top:21px}
+.learning-details h3{font-size:clamp(32px,3.65vw,52px);margin:10px 0 13px}
+.learning-divider{margin:19px 0 17px}
+.learning-concepts{margin:10px 0 15px;line-height:1.8}
+.learning-project-idea{padding:13px 16px;margin:3px 0 16px;border:1px solid var(--line);border-left:3px solid var(--cyan);background:var(--bg2);border-radius:12px}
+.learning-project-idea p{margin:7px 0 0;color:var(--text);font-size:12px;line-height:1.6}
+.learning-detail-actions{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:auto}
+.learning-resource-link{display:inline-flex;align-items:center;gap:8px;color:var(--cyan);font-weight:750;font-size:12px;text-decoration:none;border-bottom:1px solid transparent;padding-block:7px;transition:color .25s,border-color .25s}
+.learning-resource-link:hover,.learning-resource-link:focus-visible{border-color:currentColor}
+.learning-nav{display:flex;gap:8px}
+.learning-nav button{display:grid;place-items:center;cursor:pointer;width:39px;height:36px;border:1px solid var(--line-strong);border-radius:10px;background:var(--bg2);color:var(--text);font-size:17px;transition:background .25s,transform .25s}
+.learning-nav button:hover,.learning-nav button:focus-visible{background:var(--cyan-faint);transform:translateY(-2px)}
+.learning-truth{margin:15px 0 0}
+.learning-foundation{display:flex;gap:14px 22px;align-items:center;flex-wrap:wrap;margin-top:20px;padding:18px 22px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}
+.learning-foundation>span{font-size:10px;font-weight:800;letter-spacing:.12em;color:var(--cyan)}
+.learning-foundation>div{display:flex;gap:7px;flex-wrap:wrap}
+.learning-foundation>div span{padding:5px 10px;border:1px solid var(--line-strong);border-radius:99px;color:var(--text);font-size:11px;font-weight:700;background:var(--bg2)}
+.learning-foundation>small{font-size:11px;color:var(--muted);margin-left:auto}
+@media(max-width:880px){.learning-priorities{grid-template-columns:repeat(3,minmax(0,1fr))}.learning-foundation>small{margin-left:0}}
+@media(max-width:650px){.learning-priorities{grid-template-columns:1fr;gap:9px}.learning-priority{padding:12px 15px}.learning-options{grid-template-columns:1fr}.learning-head{gap:14px}.learning-detail-meta{align-items:flex-start}.learning-foundation{padding:15px}.learning-details h3{font-size:34px}}
+@media(prefers-reduced-motion:reduce){.learning-priority,.learning-nav button,.learning-resource-link{transition:none!important}.learning-priority:hover,.learning-nav button:hover{transform:none!important}}
