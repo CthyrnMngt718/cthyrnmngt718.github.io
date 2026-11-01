@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="title desc">
+<title id="title">CM — Cathyrine Menguito</title><desc id="desc">Minimal, centered white C and cyan M monogram</desc>
+<rect width="200" height="200" rx="41" fill="#F3F8FF"/><g transform="translate(-8 0)">
+  <path d="M96 62 C82 50 61 53 49 70 C33 92 36 120 53 136 C66 148 83 147 98 134" fill="none" stroke="#041334" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M106 144 V60 L136 106 L166 60 V144" fill="none" stroke="#075FBB" stroke-width="14.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
